@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:background="#b9b9b9">
+
+        <ImageView
+            android:id="@+id/switch_camera_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_switch_camera"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/flash_camera_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="2dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_flash_auto"
+            android:layout_toLeftOf="@id/switch_camera_btn"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/take_picture_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_camera"
+            android:background="@drawable/camera_btn_bg"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:elevation="2dp"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/record_video_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_play_button"
+            android:background="@drawable/video_play_btn_bg"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:elevation="2dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/video_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="#FFF"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/record_video_btn"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:max="100"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:keepScreenOn="true"
+        app:cameraPlaySounds="false"
+        app:cameraGrid="off"
+        app:cameraCropOutput="false"
+        app:cameraFacing="back"
+        app:cameraFlash="off"
+        app:cameraAudio="on"
+        app:cameraGestureTap="focusWithMarker"
+        app:cameraGestureLongTap="none"
+        app:cameraGestureScrollHorizontal="exposureCorrection"
+        app:cameraGestureScrollVertical="none"
+        app:cameraJpegQuality="100"
+        app:cameraSessionType="picture"
+        android:layout_above="@id/bottom_view"/>
+
+</RelativeLayout>

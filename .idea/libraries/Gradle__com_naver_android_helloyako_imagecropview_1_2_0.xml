@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.naver.android.helloyako:imagecropview-1.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/imagecropview-1.2.0.aar/9393d323d9f95addcbc2e0dd7a8463cd/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/imagecropview-1.2.0.aar/9393d323d9f95addcbc2e0dd7a8463cd/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.naver.android.helloyako/imagecropview/1.2.0/502416fb8ce69ae8351430ea60a4ddee2b3ab8d0/imagecropview-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
